@@ -9,14 +9,18 @@ namespace CardGame3Lib
     public class Croupier
     {
         CardPackageProvider myCpp;
-        public List<Card> myCards;
+        public List<Card> myCards = new List<Card>();
         public Croupier(CardPackageProvider cpp)
         {
             myCpp = cpp;
         }
         public void InitGame()
         {
-            myCards = myCpp.GetCards();
+            CardPackage cardPackage = myCpp.GetCardPackage();
+            foreach (Card card in cardPackage.MyCardList)
+            {
+                myCards.Add(card);
+            }       
         }
         public Card GiveCard()
         {

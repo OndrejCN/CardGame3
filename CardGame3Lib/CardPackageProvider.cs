@@ -8,15 +8,21 @@ namespace CardGame3Lib
 {
     public class CardPackageProvider : ICardPackageProvider
     {
-        public CardPackage myCardPackage;
-        public void CreateCardPackage()
+        CardPackage cardPackage;
+
+        void CreateCardPackage()
         {
-            myCardPackage = new CardPackage();
+            List<Card> listOfCards = new List<Card>();
+            for (int i = 1; i <= 32; i++)
+            {
+                listOfCards.Add(new Card(i));
+            }
+            cardPackage = new CardPackage(listOfCards);
         }
-        public List<Card> GetCards()
+        public CardPackage GetCardPackage()
         {
             CreateCardPackage();
-            return myCardPackage.myCardList;
+            return cardPackage;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace CardGame3Lib
 {
     interface ICardPackageProvider
     {
-        void CreateCardPackage();
-        List<Card> GetCards();
+        //void CreateCardPackage();
+        CardPackage GetCardPackage();
     }
 }

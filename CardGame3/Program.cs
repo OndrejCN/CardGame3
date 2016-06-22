@@ -14,12 +14,10 @@ namespace CardGame3Prog
             Croupier myCroupier = new Croupier(new CardPackageProvider());
             Player player1 = new Player(myCroupier);
             myCroupier.InitGame();
-
             
             player1.GetCard();
             player1.GetCard();
             player1.GiveCard(1);
-            player1.GetCard();
             player1.GetCard();
             player1.GetCard();
 
@@ -28,7 +26,7 @@ namespace CardGame3Prog
             {
                 Console.Write(i.number + ", ");
             }
-            Console.WriteLine("Cards in Croupiers CardList: ");
+            Console.WriteLine("\nCards in Cropiers CardList: ");
             foreach (Card card in myCroupier.myCards)
             {
                 Console.Write(card.number + ", ");

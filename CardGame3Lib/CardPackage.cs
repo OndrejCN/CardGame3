@@ -8,14 +8,15 @@ namespace CardGame3Lib
 {
     public class CardPackage
     {
-        public List<Card> myCardList = new List<Card>();
+        List<Card> myCardList = new List<Card>();
 
-        public CardPackage()
+        public CardPackage(List<Card> listOfCards)
         {
-            for (int i = 1; i <= 32; i++)
-            {
-                myCardList.Add(new Card(i));       
-            }
+            myCardList = listOfCards;
+        }
+        public List<Card> MyCardList
+        {
+            get { return myCardList; }
         }
     }
 }
