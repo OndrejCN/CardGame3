@@ -13,6 +13,5 @@ namespace CardGame3Lib
         {
             number = n;
         }
-
     }
 }

@@ -10,6 +10,7 @@ namespace CardGame3Lib
     {
         Croupier myCroupier;
         public List<Card> CardsOnHand = new List<Card>();
+
         public Player(Croupier myC)
         {
             myCroupier = myC;
@@ -17,6 +18,12 @@ namespace CardGame3Lib
         public void GetCard()
         {
             CardsOnHand.Add(myCroupier.GiveCard());
+        }
+        public Card GiveCard(int position)
+        {
+            Card output = CardsOnHand[position];
+            CardsOnHand.RemoveAt(position);
+            return output;
         }
     }
 }

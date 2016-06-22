@@ -9,7 +9,7 @@ namespace CardGame3Lib
     public class Croupier
     {
         CardPackageProvider myCpp;
-        List<Card> myCards;
+        public List<Card> myCards;
         public Croupier(CardPackageProvider cpp)
         {
             myCpp = cpp;
