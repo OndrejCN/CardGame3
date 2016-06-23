@@ -20,9 +20,10 @@ namespace CardGame3Prog
             player1.GiveCard(1);
             player1.GetCard();
             player1.GetCard();
+            player1.GetCard();
 
             Console.WriteLine("Cards on hand: ");
-            foreach (Card i in player1.cardsOnHand)
+            foreach (Card i in player1.CardsOnHand)
             {
                 Console.Write(i.number + ", ");
             }
