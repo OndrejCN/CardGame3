@@ -18,6 +18,7 @@ namespace UnitTestCardGame3Lib
             listOfCards.Add(new Card(2));
             listOfCards.Add(new Card(3));
             listOfCards.Add(new Card(3));
+            listOfCards.Add(new Card(3));
             stubCardPackageProvider.Stub(x => x.GetCardPackage()).Return(new CardPackage(listOfCards));
 
             Croupier testCroupier = new Croupier(stubCardPackageProvider);
