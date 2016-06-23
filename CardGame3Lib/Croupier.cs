@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CardGame3Lib
 {
-    public class Croupier
+    public class Croupier : ICroupier
     {
-        CardPackageProvider myCpp;
+        ICardPackageProvider myCpp;
         public List<Card> myCards = new List<Card>();
-        public Croupier(CardPackageProvider cpp)
+        public Croupier(ICardPackageProvider cpp)
         {
             myCpp = cpp;
         }
@@ -20,7 +20,7 @@ namespace CardGame3Lib
             foreach (Card card in cardPackage.MyCardList)
             {
                 myCards.Add(card);
-            }       
+            }
         }
         public Card GiveCard()
         {

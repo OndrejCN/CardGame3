@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace CardGame3Lib
 {
-    public class Player
+    public class Player : IPlayer
     {
-        Croupier myCroupier;
-        public List<Card> CardsOnHand = new List<Card>();
+        ICroupier myCroupier;
+        public List<Card> cardsOnHand = new List<Card>();
 
-        public Player(Croupier myC)
+        public Player(ICroupier myC)
         {
             myCroupier = myC;
         }
         public void GetCard()
         {
-            CardsOnHand.Add(myCroupier.GiveCard());
+            cardsOnHand.Add(myCroupier.GiveCard());
         }
         public Card GiveCard(int position)
         {
-            Card output = CardsOnHand[position];
-            CardsOnHand.RemoveAt(position);
+            Card output = cardsOnHand[position];
+            cardsOnHand.RemoveAt(position);
             return output;
         }
     }
