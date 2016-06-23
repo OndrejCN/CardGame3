@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame3Prog", "CardGame3\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame3Lib", "CardGame3Lib\CardGame3Lib.csproj", "{8EEB7AE5-7A83-4FEC-844F-D39E1D2D9703}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCardGame3Lib", "UnitTestCardGame3Lib\UnitTestCardGame3Lib.csproj", "{645374C6-A2CE-4962-A744-4F5FCE62D9CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8EEB7AE5-7A83-4FEC-844F-D39E1D2D9703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EEB7AE5-7A83-4FEC-844F-D39E1D2D9703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EEB7AE5-7A83-4FEC-844F-D39E1D2D9703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645374C6-A2CE-4962-A744-4F5FCE62D9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645374C6-A2CE-4962-A744-4F5FCE62D9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645374C6-A2CE-4962-A744-4F5FCE62D9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645374C6-A2CE-4962-A744-4F5FCE62D9CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -45,6 +45,8 @@
     <Compile Include="CardPackageProvider.cs" />
     <Compile Include="Croupier.cs" />
     <Compile Include="ICardPackageProvider.cs" />
+    <Compile Include="ICroupier.cs" />
+    <Compile Include="IPlayer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
