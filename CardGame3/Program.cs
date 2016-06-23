@@ -22,7 +22,7 @@ namespace CardGame3Prog
             player1.GetCard();
 
             Console.WriteLine("Cards on hand: ");
-            foreach (Card i in player1.CardsOnHand)
+            foreach (Card i in player1.cardsOnHand)
             {
                 Console.Write(i.number + ", ");
             }
