@@ -18,38 +18,5 @@ namespace CardGame3Lib
         {
             get { return myCardList; }
         }
-        public override bool Equals(System.Object obj)
-        {
-            if (obj == null)
-            {
-                return false;
-            }
-
-            // If parameter cannot be cast to ThreeDPoint return false:
-            CardPackage cp = obj as CardPackage;
-
-            if ((object)cp == null)
-            {
-                return false;
-            }
-
-            // Return true if the fields match:
-            return MyCardList.SequenceEqual(cp.MyCardList);
-        }
-
-        public bool Equals(CardPackage cp)
-        {
-            if ((object)cp == null)
-            {
-                return false;
-            }
-            // Return true if the fields match:
-            return MyCardList.SequenceEqual(cp.MyCardList);
-        }
-
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
     }
 }

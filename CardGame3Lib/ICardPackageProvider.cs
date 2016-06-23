@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CardGame3Lib
 {
-    public interface ICardPackageProvider
+    interface ICardPackageProvider
     {
         //void CreateCardPackage();
         CardPackage GetCardPackage();
