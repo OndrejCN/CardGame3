@@ -43,12 +43,16 @@
     <Compile Include="Card.cs" />
     <Compile Include="CardPackage.cs" />
     <Compile Include="CardPackageProvider.cs" />
+    <Compile Include="CardPackType.cs" />
     <Compile Include="Croupier.cs" />
     <Compile Include="ICardPackageProvider.cs" />
     <Compile Include="ICroupier.cs" />
     <Compile Include="IPlayer.cs" />
+    <Compile Include="Mixer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SedmaGame.cs" />
+    <Compile Include="TypeOfGame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

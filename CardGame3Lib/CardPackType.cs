@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace CardGame3Lib
 {
-    public interface ICroupier
+    class CardPackType
     {
-        Card GiveCard();
-        void MixCards();
     }
 }

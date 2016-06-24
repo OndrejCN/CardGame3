@@ -14,9 +14,9 @@ namespace CardGame3Lib
         {
             myCpp = cpp;
         }
-        public void InitGame()
+        public void InitGame(TypeOfGame tog)
         {
-            CardPackage cardPackage = myCpp.GetCardPackage();
+            CardPackage cardPackage = myCpp.GetCardPackage(tog);
             foreach (Card card in cardPackage.MyCardList)
             {
                 myCards.Add(card);
@@ -27,6 +27,13 @@ namespace CardGame3Lib
             Card output = myCards[0];
             myCards.RemoveAt(0);
             return output;
+        }
+
+        public void MixCards()
+        {
+            Mixer.RandomMix(myCards);
+            Mixer.ShuffleMix(myCards);
+            Mixer.CutMix(myCards);
         }
     }
 }

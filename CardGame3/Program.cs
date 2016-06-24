@@ -13,23 +13,36 @@ namespace CardGame3Prog
         {
             Croupier myCroupier = new Croupier(new CardPackageProvider());
             Player player1 = new Player(myCroupier);
-            myCroupier.InitGame();
-            
+            myCroupier.InitGame(new SedmaGame());
+
             player1.GetCard();
             player1.GetCard();
             player1.GiveCard(1);
             player1.GetCard();
             player1.GetCard();
-            
-            Console.WriteLine("Cards on hand: ");
-            foreach (Card i in player1.cardsOnHand)
+
+            Console.WriteLine("\nCards on hand: ");
+            foreach (Card card in player1.cardsOnHand)
             {
-                Console.Write(i.number + ", ");
+                //Console.Write(i.number + ", ");
+                Console.WriteLine(card.value + ",\t" + card.colour + ",\t" + card.type);
             }
+
             Console.WriteLine("\nCards in Cropiers CardList: ");
             foreach (Card card in myCroupier.myCards)
             {
-                Console.Write(card.number + ", ");
+                //Console.Write(card.number + ", ");
+                Console.WriteLine(card.value + ",\t" + card.colour + ",\t" + card.type);
+            }
+
+            Console.WriteLine("\nMixing cards ...");
+            myCroupier.MixCards();
+
+            Console.WriteLine("\nCards in Cropiers CardList: ");
+            foreach (Card card in myCroupier.myCards)
+            {
+                //Console.Write(card.number + ", ");
+                Console.WriteLine(card.value + ",\t" + card.colour + ",\t" + card.type);
             }
             Console.ReadKey();
         }

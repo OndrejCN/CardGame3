@@ -8,18 +8,18 @@ namespace CardGame3Lib
 {
     public class CardPackageProvider : ICardPackageProvider
     {       
-        CardPackage CreateCardPackage()
+        public CardPackage GetCardPackage(TypeOfGame tog)
         {
-            List<Card> listOfCards = new List<Card>();
-            for (int i = 1; i <= 32; i++)
-            {
-                listOfCards.Add(new Card(i));
-            }
-            return new CardPackage(listOfCards);
-        }
-        public CardPackage GetCardPackage()
-        {
-            return CreateCardPackage();            
-        }
+            return tog.CreateCardPackage();            
+        }       
+        //public static List<Card> CreateDefaultCards()
+        //{
+        //    List<Card> listOfCards = new List<Card>();
+        //    for (int i = 1; i <= 32; i++)
+        //    {
+        //        listOfCards.Add(new Card(i));
+        //    }
+        //    return listOfCards;
+        //}
     }
 }

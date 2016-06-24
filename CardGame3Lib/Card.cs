@@ -9,9 +9,31 @@ namespace CardGame3Lib
     public class Card
     {
         public int number;
+        public string colour;
+        public string value;
+        public string type;
+        /// <summary>
+        /// Original constructor.
+        /// </summary>
+        /// <param name="n">Number describing kind of card.</param>
         public Card(int n)
-        {
+        {            
             number = n;
+            colour = "default";
+            value = "default";
+            type = "default";
+        }
+        /// <summary>
+        /// New constructor.
+        /// </summary>
+        /// <param name="colour"></param>
+        /// <param name="value"></param>
+        public Card(string colour, string value, string type)
+        {
+            this.number = 0;
+            this.colour = colour;
+            this.value = value;
+            this.type = type;
         }
         public override bool Equals(System.Object obj)
         {

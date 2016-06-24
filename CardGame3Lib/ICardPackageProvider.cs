@@ -9,6 +9,6 @@ namespace CardGame3Lib
     public interface ICardPackageProvider
     {
         //void CreateCardPackage();
-        CardPackage GetCardPackage();
+        CardPackage GetCardPackage(TypeOfGame tog);
     }
 }
