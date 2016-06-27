@@ -55,6 +55,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UnitTestMixer.cs" />
     <Compile Include="UnitTestPlayer.cs" />
     <Compile Include="UnitTestCardPackageProvider.cs" />
     <Compile Include="UnitTestCroupier.cs" />

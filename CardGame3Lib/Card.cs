@@ -51,7 +51,7 @@ namespace CardGame3Lib
             }
 
             // Return true if the fields match:
-            return number == c.number;
+            return (number == c.number && colour == c.colour && value == c.value && type == c.type) ;
         }
 
         public bool Equals(Card c)
@@ -59,9 +59,9 @@ namespace CardGame3Lib
             if ((object)c == null)
             {
                 return false;
-            } 
+            }
             // Return true if the fields match:
-            return number == c.number;
+            return (number == c.number && colour == c.colour && value == c.value && type == c.type);
         }
 
         public override int GetHashCode()

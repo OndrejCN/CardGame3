@@ -43,8 +43,8 @@
     <Compile Include="Card.cs" />
     <Compile Include="CardPackage.cs" />
     <Compile Include="CardPackageProvider.cs" />
-    <Compile Include="CardPackType.cs" />
     <Compile Include="Croupier.cs" />
+    <Compile Include="DefaultGame.cs" />
     <Compile Include="ICardPackageProvider.cs" />
     <Compile Include="ICroupier.cs" />
     <Compile Include="IPlayer.cs" />

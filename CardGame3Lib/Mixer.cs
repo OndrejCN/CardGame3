@@ -9,10 +9,7 @@ namespace CardGame3Lib
     public static class Mixer
     {
         static Random rand = new Random();
-        //public Mixer(List<Card> myCards)
-        //{
-        //    RandomMix(myCards);
-        //}
+
         public static void RandomMix(List<Card> cards)
         {
             Console.WriteLine("Random mixing cards.");
@@ -42,7 +39,7 @@ namespace CardGame3Lib
             int amountOfCardsForFlipping = GetRandNumber(cards.Count);
             List<Card> cardsToFlip = TakeCardsForFlipping(cards, amountOfCardsForFlipping);
             ShiftArrayOfCards(cards, amountOfCardsForFlipping);
-            AddCardsToFlipToCards(cardsToFlip, cards);
+            AddCardsToFlipToBottomOfCards(cardsToFlip, cards);
         }
 
         public static int GetRandNumber(int maxInterval)
@@ -62,7 +59,7 @@ namespace CardGame3Lib
         {
             cards.RemoveRange(0, amount);
         }
-        public static void AddCardsToFlipToCards(List<Card> cardsToFlip, List<Card> cards)
+        public static void AddCardsToFlipToBottomOfCards(List<Card> cardsToFlip, List<Card> cards)
         {
             cards.AddRange(cardsToFlip);
         }
